@@ -1,0 +1,20 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    padding: 2em 0;
+    max-width: 1200px;
+}
+
+#navbar__logo {
+    width: 200px;
+}
+
+.navbar__buttons {
+    list-style-type: none;
+    display: flex;
+    gap: 5rem;
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 1.4rem;
+}

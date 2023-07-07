@@ -1,0 +1,10 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    margin: auto;
+    row-gap: 2em;
+    padding: 2em 1em;
+    max-width: 1200px;
+    background-color: #f6f6f6;
+}
