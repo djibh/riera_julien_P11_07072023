@@ -6,10 +6,12 @@ import Footer from './Footer';
 
 function App() {
   return <main>
-    <Navbar />
-    <Banner />
-    <Grid />
-    <Footer />
+      <div className='wrapper'>
+        <Navbar />
+        <Banner />
+        <Grid />
+      </div>
+      <Footer />
   </main>
 
 }

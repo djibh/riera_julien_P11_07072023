@@ -5,7 +5,7 @@
 
 .grid__item {
     position: relative;
-    width: 340px;
+    max-width: 340px;
     background-color: black;
     overflow: hidden;
 }
