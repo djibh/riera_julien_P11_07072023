@@ -1,0 +1,16 @@
+footer {
+    display: grid;
+    place-items: center;
+    padding: 1em;
+    background-color: black;
+    height: 120px;
+    color: white;
+}
+
+.footer__logo {
+    width: 100px;
+}
+
+.footer__text {
+    margin: 0;
+}
