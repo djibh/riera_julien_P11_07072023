@@ -15,7 +15,8 @@
 .banner::before {
     position: absolute;
     content: '';
-    background-image: url(../assets/banner-img.png);
+    /* background-image: url(../assets/home-banner-img.png); */
+    background-image: attr(data-image);
     background-size: cover;
     background-position: center;
     opacity: 0.8;

@@ -1,15 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles/index.css';
-import App from './components/App';
 import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-
-
-const router = createBrowserRouter([
-  { path: "/", element: <App />, errorElement: <h1>404 not found</h1> },
-  { path: "/about", element: "About page" }
-])
+import { RouterProvider } from 'react-router-dom';
+import { router } from './routes/router';
+import './styles/index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,11 +1,11 @@
 import GridItem from './GridItem'
 import '../styles/Grid.css'
-import { apartements } from '../datas/apartements'
 
-function Grid() {
+
+function Grid({ data }) {
   return (
     <section className="grid">
-      { apartements.map((apartement) => 
+      { data.map((apartement) => 
         <GridItem 
           key={apartement.id}
           title={apartement.title}
