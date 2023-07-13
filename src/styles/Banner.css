@@ -1,8 +1,5 @@
-.banner, .banner h1 {
-    position: relative;
- }
-
 .banner {
+    position: relative;
     display: grid;
     place-items: center;
     margin: 2em auto 4em;
@@ -10,13 +7,22 @@
     border-radius: 1.5em;
     color: white;
     background-color: black;
+    overflow: hidden;
+}
+
+.banner img {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.banner h1 {
+    position: absolute;
 }
 
 .banner::before {
     position: absolute;
     content: '';
-    /* background-image: url(../assets/home-banner-img.png); */
-    background-image: attr(data-image);
+    background-image: url(../assets/home-banner-img.png);
     background-size: cover;
     background-position: center;
     opacity: 0.8;

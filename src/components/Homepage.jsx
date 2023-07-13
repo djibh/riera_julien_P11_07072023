@@ -1,10 +1,12 @@
 import { apartements } from '../datas/apartements'
-import homebannerImageSource from '../assets/home-banner-img.png'
-import '../styles/App.css';
+// import homebannerImageSource from '../assets/home-banner-img.png'
+import '../styles/Homepage.css';
 import Banner from './Banner';
 import Grid from './Grid';
 
-function App() {
+const homebannerImageSource = '../assets/home-banner-img.png'
+
+function Homepage() {
   return <>
           <Banner img-source={ homebannerImageSource }/>
           <Grid data={ apartements }/>
@@ -12,4 +14,4 @@ function App() {
 
 }
 
-export default App;
+export default Homepage;

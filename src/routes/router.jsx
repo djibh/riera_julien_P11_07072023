@@ -1,33 +1,27 @@
-import App from '../components/App';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import About from '../components/About';
-import { Outlet, createBrowserRouter } from 'react-router-dom';
-
-const HeaderAndFooter = () => {
-   return <main>
-      <div className='wrapper'>
-        <Navbar />
-        <Outlet />
-      </div>
-      <Footer />
-  </main>
-}
+import { createBrowserRouter } from 'react-router-dom';
+import Homepage from '../components/Homepage';
+import BaseLayout from '../layouts/BaseLayout';
+import About from '../components/about/About';
+import Apartment from '../components/apartment/Apartment';
+import Errorpage from '../components/Errorpage';
 
 export const router = createBrowserRouter([
     {
-        element: <HeaderAndFooter />,
+        element: <BaseLayout />,
+        errorElement: <Errorpage />,
         children: [
             {
                 path: "/",
-                element: <App />
+                element: <Homepage />,
             },
             {
                 path: "/about",
                 element: <About />
+            },
+            {
+                path: '/apartment',
+                element: <Apartment/>
             }
         ]
     }
-//   { path: "/", element: <App />, errorElement: <h1>404 not found</h1> },
-//   { path: "/about", element: <About /> }
 ])
