@@ -9,11 +9,12 @@
 }
 
 .error-message h1 {
-    font-size: 16rem;
+    font-size: 15rem;
 }
 
 .error-message h2 {
     font-size: 1.8rem;
+    font-weight: 500;
 }
 
 .error-message a {
@@ -21,6 +22,6 @@
     bottom: 2em;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1.6em;
+    font-size: 1.5em;
     color: #fb6060;
 }

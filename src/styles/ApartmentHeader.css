@@ -4,6 +4,7 @@
 
 .apartment-header {
     justify-content: space-between;
+    margin-bottom: 1em;
 }
 
 .owner__container {
@@ -12,6 +13,7 @@
 
 .apartment__owner {
     gap: 1em;
+    margin-bottom: .8em;
 }
 
 .title__container h1, .title__container h2 {
@@ -42,7 +44,16 @@
     border-radius: .7rem;
     text-align: center;
     color: white;
-    
+}
+
+.owner__name {
+    display: grid;
+    place-content: center;
+    text-align: right;
+}
+
+.owner__name h3 {
+    margin: 0;
 }
 
 .apartment__owner-picture {
@@ -51,8 +62,16 @@
     border-radius: 50%;
     background-color: #bbb;
 }
-.star {
-    font-size: 1.7rem;
+
+.apartment__rating {
+    display: flex;
+    justify-content: flex-end;
+    gap: .6em;
+
+}
+
+.stars {
+    font-size: 1.5rem;
 }
 
 .rating__star--off {

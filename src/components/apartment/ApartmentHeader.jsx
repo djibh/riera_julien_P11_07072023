@@ -3,6 +3,8 @@ import '../../styles/ApartmentHeader.css'
 function ApartmentHeader() {
 
 const tagsList = ['Cozy', 'Canal', 'Paris 10']
+const ownerName = "Alexandre Dumas"
+const ownerSplitName = ownerName.split(' ')
 
   return (
     <section className="apartment-header">
@@ -17,15 +19,18 @@ const tagsList = ['Cozy', 'Canal', 'Paris 10']
       </div>
       <div className="owner__container">
         <div className="apartment__owner">
-            <h3>Alexandre Dumas</h3>
+            <div className='owner__name'>
+              <h3>{ ownerSplitName[0] }</h3>
+              <h3>{ ownerSplitName[1] }</h3>
+            </div>
             <div className="apartment__owner-picture"></div>
         </div>
         <div className="apartment__rating">
-            <span className="rating__star--on star"><i className="fa-solid fa-star"></i></span>
-            <span className="rating__star--on star"><i className="fa-solid fa-star"></i></span>
-            <span className="rating__star--on star"><i className="fa-solid fa-star"></i></span>
-            <span className="rating__star--off star"><i className="fa-solid fa-star"></i></span>
-            <span className="rating__star--off star"><i className="fa-solid fa-star"></i></span>
+            <span className="rating__star--on stars"><i className="fa-solid fa-star"></i></span>
+            <span className="rating__star--on stars"><i className="fa-solid fa-star"></i></span>
+            <span className="rating__star--on stars"><i className="fa-solid fa-star"></i></span>
+            <span className="rating__star--off stars"><i className="fa-solid fa-star"></i></span>
+            <span className="rating__star--off stars"><i className="fa-solid fa-star"></i></span>
         </div>
       </div>
     </section>
