@@ -7,9 +7,8 @@ function Grid({ data }) {
     <section className="grid">
       { data.map((apartement) => 
         <GridItem 
-          key={apartement.id}
-          title={apartement.title}
-          cover={apartement.cover}
+          key={ apartement.id }
+          apartment= { apartement }
         />) }
     </section>
   )

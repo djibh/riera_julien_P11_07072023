@@ -3,7 +3,6 @@ import Banner from "../Banner"
 import Collapser from "../Collapser"
 import { listOfContent } from '../../datas/aboutPageContents'
 
-
 function About() {
   return <>
             <Banner img-source={ homebannerImageSource }/>

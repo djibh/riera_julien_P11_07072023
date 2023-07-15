@@ -7,10 +7,6 @@
     margin-bottom: 1em;
 }
 
-.owner__container {
-    flex-direction: column;
-}
-
 .apartment__owner {
     gap: 1em;
     margin-bottom: .8em;
@@ -32,18 +28,23 @@
 
 .apartments__tags {
     list-style-type: none;
+    display: flex;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 150px));
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
 .apartments__tags li {
+    width: 10em;
     background-color: #FF6060;
     padding-block: .2em;
     border-radius: .7rem;
     text-align: center;
     color: white;
+}
+
+.owner__container {
+    flex-direction: column;
 }
 
 .owner__name {
@@ -56,11 +57,18 @@
     margin: 0;
 }
 
+.apartment__owner {
+    justify-content: end;
+}
+
 .apartment__owner-picture {
     height: 64px;
     width: 64px;
+}
+
+.apartment__owner-picture img {
+    width: 100%;
     border-radius: 50%;
-    background-color: #bbb;
 }
 
 .apartment__rating {

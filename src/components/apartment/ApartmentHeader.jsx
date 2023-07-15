@@ -1,18 +1,18 @@
 import '../../styles/ApartmentHeader.css'
 
-function ApartmentHeader() {
+function ApartmentHeader({ selectedApartment }) {
 
-const tagsList = ['Cozy', 'Canal', 'Paris 10']
-const ownerName = "Alexandre Dumas"
-const ownerSplitName = ownerName.split(' ')
+const { name } = selectedApartment.host
+const [firstName, lastName] = name.split(' ')
+const { rating } = selectedApartment
 
   return (
     <section className="apartment-header">
       <div className="title__container">
-        <h1>Cozy loft on the Canal Saint-Martin</h1>
-        <h2>Paris, Île-de-France</h2>
+        <h1>{ selectedApartment.title }</h1>
+        <h2>{ selectedApartment.location }</h2>
         <ul className="apartments__tags">
-            { tagsList.map((tag) =>
+            { selectedApartment.tags.map((tag) =>
                 <li key={tag}>{tag}</li>)
             }
         </ul>
@@ -20,17 +20,20 @@ const ownerSplitName = ownerName.split(' ')
       <div className="owner__container">
         <div className="apartment__owner">
             <div className='owner__name'>
-              <h3>{ ownerSplitName[0] }</h3>
-              <h3>{ ownerSplitName[1] }</h3>
+              <h3>{ firstName }</h3>
+              <h3>{ lastName }</h3>
             </div>
-            <div className="apartment__owner-picture"></div>
+            <div className="apartment__owner-picture">
+              <img src={ selectedApartment.host.picture } alt='owner' />
+            </div>
         </div>
         <div className="apartment__rating">
-            <span className="rating__star--on stars"><i className="fa-solid fa-star"></i></span>
-            <span className="rating__star--on stars"><i className="fa-solid fa-star"></i></span>
-            <span className="rating__star--on stars"><i className="fa-solid fa-star"></i></span>
-            <span className="rating__star--off stars"><i className="fa-solid fa-star"></i></span>
-            <span className="rating__star--off stars"><i className="fa-solid fa-star"></i></span>
+            {[1,2,3,4,5].map((number) => 
+                <span key={number} className={rating >= number 
+                  ? "rating__star--on stars" 
+                  : "rating__star--off stars" }><i className="fa-solid fa-star"></i></span>
+            )
+            }
         </div>
       </div>
     </section>
