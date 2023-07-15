@@ -1,0 +1,26 @@
+.collapser__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fb6060;
+    color: white;
+    padding: .5em 1em;
+    border-radius: .7em;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.collapser ul {
+    list-style-type: none;
+}
+
+.collapser__content {
+    position: relative;
+    min-height: 50px;
+    line-height: 1.7;
+    top: -30px;
+    z-index: -1;
+    padding: 1.4em 1em .7em ;
+    background-color: #eee;
+    border-radius: 0 0 .7em .7em;
+}
