@@ -1,5 +1,5 @@
 import GridItem from './GridItem'
-import '../styles/Grid.css'
+import './Grid.css'
 
 
 function Grid({ data }) {

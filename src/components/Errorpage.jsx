@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../styles/Errorpage.css'
+import './Errorpage.css'
 import Navbar from './Navbar'
 
 function Errorpage() {

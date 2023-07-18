@@ -1,4 +1,4 @@
-import '../../styles/ApartmentDetails.css'
+import './ApartmentDetails.css'
 
 function ApartmentDetails({ selectedApartment }) {
   return (

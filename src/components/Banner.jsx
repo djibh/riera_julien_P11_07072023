@@ -1,9 +1,16 @@
-import '../styles/Banner.css'
+import './Banner.css'
+import PropTypes from 'prop-types'
 
-function Banner({ imageSource }) {
+function Banner({ imgSource, title }) {
     return <div className="banner">
-            <h1>Chez vous, partout et ailleurs</h1>
+            <img src={ imgSource } alt='Bannière à propos'></img>
+            <h1>{ title }</h1>
         </div> 
 }
+
+Banner.propTypes = {
+    imgSource: PropTypes.string,
+    title: PropTypes.string    
+  };
 
 export default Banner

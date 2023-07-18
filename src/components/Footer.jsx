@@ -1,5 +1,5 @@
 import logoBlack from '../assets/logo-black.svg'
-import '../styles/Footer.css'
+import './Footer.css'
 
 function Footer() {
     return <footer>

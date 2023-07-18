@@ -1,14 +1,12 @@
 import { apartements } from '../datas/apartements'
-// import homebannerImageSource from '../assets/home-banner-img.png'
-import '../styles/Homepage.css';
+import homebannerImageSource from '../assets/home-banner-img.png'
 import Banner from './Banner';
 import Grid from './Grid';
-
-const homebannerImageSource = '../assets/home-banner-img.png'
+import './Homepage.css';
 
 function Homepage() {
   return <>
-          <Banner img-source={ homebannerImageSource }/>
+          <Banner imgSource={ homebannerImageSource } title={'Chez vous, partout et ailleurs'}/>
           <Grid data={ apartements }/>
         </>
 

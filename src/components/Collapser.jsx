@@ -1,4 +1,4 @@
-import '../styles/Collapser.css'
+import './Collapser.css'
 
 function Collapser( {title, content} ) {
   return (

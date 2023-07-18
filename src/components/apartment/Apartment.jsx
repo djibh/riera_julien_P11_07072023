@@ -1,11 +1,12 @@
 import Banner from '../Banner'
 import ApartmentHeader from './ApartmentHeader'
 import ApartmentDetails from './ApartmentDetails'
-import '../../styles/Apartement.css'
-import { useLocation } from 'react-router-dom'
+import './Apartement.css'
+import { useLocation, useParams } from 'react-router-dom'
 
 function Apartment() {
 
+  // let { id } = useParams()
   let { state } = useLocation()
 
   return (

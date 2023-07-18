@@ -1,10 +1,11 @@
-import '../../styles/ApartmentHeader.css'
+import './ApartmentHeader.css'
 
 function ApartmentHeader({ selectedApartment }) {
 
 const { name } = selectedApartment.host
-const [firstName, lastName] = name.split(' ')
 const { rating } = selectedApartment
+const [firstName, lastName] = name.split(' ')
+const ratingScale = [1,2,3,4,5]
 
   return (
     <section className="apartment-header">
@@ -28,7 +29,7 @@ const { rating } = selectedApartment
             </div>
         </div>
         <div className="apartment__rating">
-            {[1,2,3,4,5].map((number) => 
+            { ratingScale.map((number) => 
                 <span key={number} className={rating >= number 
                   ? "rating__star--on stars" 
                   : "rating__star--off stars" }><i className="fa-solid fa-star"></i></span>
