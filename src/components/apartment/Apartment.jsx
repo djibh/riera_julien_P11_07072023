@@ -1,19 +1,19 @@
 import Banner from '../Banner'
 import ApartmentHeader from './ApartmentHeader'
+import { useParams } from 'react-router-dom'
 import ApartmentDetails from './ApartmentDetails'
-import './Apartement.css'
-import { useLocation, useParams } from 'react-router-dom'
+import getApartment from '../../api/getApartment'
+import './Apartment.css'
 
 function Apartment() {
-
-  // let { id } = useParams()
-  let { state } = useLocation()
+  const { id } = useParams()
+  const apartment = getApartment(id)
 
   return (
     <main className='apartement-page'>
-        <Banner />
-        <ApartmentHeader selectedApartment={ state.apartment }/>
-        <ApartmentDetails selectedApartment={ state.apartment }/>
+        <Banner imgSource={ apartment.cover }/>
+        <ApartmentHeader selectedApartment={ apartment }/>
+        <ApartmentDetails selectedApartment={ apartment }/>
     </main>
   )
 }
