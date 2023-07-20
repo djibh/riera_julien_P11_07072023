@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom'
 import getApartment from '../../api/getApartment'
-import Banner from '../Banner'
 import ApartmentHeader from './ApartmentHeader'
 import ApartmentDetails from './ApartmentDetails'
+import Carousel from '../Carousel'
 import './Apartment.css'
 
 function Apartment() {
@@ -11,7 +11,7 @@ function Apartment() {
 
   return (
     <main className='apartement-page'>
-        <Banner imgSource={ apartment.cover }/>
+        <Carousel pictures={ apartment.pictures }/>
         <ApartmentHeader selectedApartment={ apartment }/>
         <ApartmentDetails selectedApartment={ apartment }/>
     </main>

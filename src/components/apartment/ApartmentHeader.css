@@ -35,9 +35,9 @@
 }
 
 .apartments__tags li {
-    width: 10em;
+    min-width: 8em;
     background-color: #FF6060;
-    padding-block: .2em;
+    padding: .2em 1em;
     border-radius: .7rem;
     text-align: center;
     font-size: 0.9rem;
