@@ -1,8 +1,8 @@
+import { useParams } from 'react-router-dom'
+import getApartment from '../../api/getApartment'
 import Banner from '../Banner'
 import ApartmentHeader from './ApartmentHeader'
-import { useParams } from 'react-router-dom'
 import ApartmentDetails from './ApartmentDetails'
-import getApartment from '../../api/getApartment'
 import './Apartment.css'
 
 function Apartment() {
