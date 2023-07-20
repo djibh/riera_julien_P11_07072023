@@ -10,11 +10,11 @@ function Apartment() {
   const apartment = getApartment(id)
 
   return (
-    <main className='apartement-page'>
+    <div className='apartement-page'>
         <Carousel pictures={ apartment.pictures }/>
         <ApartmentHeader selectedApartment={ apartment }/>
         <ApartmentDetails selectedApartment={ apartment }/>
-    </main>
+    </div>
   )
 }
 

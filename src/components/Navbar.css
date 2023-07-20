@@ -30,3 +30,19 @@
 .navbar__buttons a.active {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 992px) {
+    .navbar {
+        padding-inline: 1em;
+    }
+    
+    #navbar__logo {
+        width: 100px;
+    }
+
+    .navbar__buttons {
+        gap: 2rem;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+}

@@ -76,7 +76,6 @@
     display: flex;
     justify-content: flex-end;
     gap: .6em;
-
 }
 
 .stars {
@@ -85,4 +84,53 @@
 
 .rating__star--off {
     color: #ddd;
+}
+
+@media screen and (max-width: 992px) {
+    .apartment-header {
+        flex-direction: column;
+    }
+
+    .title__container h1 {
+        font-size: 1.4rem;
+        margin-bottom: .3em;
+    }
+
+    .title__container h2 {
+        font-size: 1.1rem;
+    }
+
+    .apartments__tags li {
+        min-width: 8em;
+        padding: .2em 1em;
+        font-size: 0.8rem;
+    }
+
+    .owner__container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .apartment__rating {        
+        gap: .4em;
+    }
+    
+    .stars {
+        font-size: 1.05rem;
+    }
+
+    .owner__name h3 {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    .apartment__owner {
+        margin-bottom: 0;
+    }
+    
+    .apartment__owner-picture {
+        height: 32px;
+        width: 32px;
+    }
 }

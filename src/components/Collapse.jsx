@@ -11,7 +11,7 @@ function Collapse( {title, content} ) {
           <span>{ title }</span>
           <i className="fa-solid fa-chevron-up"></i>
         </div>
-          <div className={isVisible ? "collapser__content" : "collapser__content hidden" }>{ content }</div> 
+        <div className={isVisible ? "collapser__content" : "collapser__content hidden" }>{ content }</div> 
       </article>
   )
 }
