@@ -7,7 +7,7 @@ import './Homepage.css';
 function Homepage() {
   const apartements = useAllApartments()
   return <>
-          <Banner imgSource={ homebannerImageSource } title={'Chez vous, partout et ailleurs'}/>
+          <Banner imgSource={ homebannerImageSource } title={'Chez vous,\npartout et ailleurs'}/>
           <Grid data={ apartements }/>
         </>
 }
