@@ -9,7 +9,7 @@ function Collapse( {title, content} ) {
     <article className="details__description collapser">
         <div className="collapser__title" onClick={ handleClick }>
           <span>{ title }</span>
-          <i className="fa-solid fa-chevron-up"></i>
+          <i className={isVisible ? "fa-solid fa-chevron-down active" : "fa-solid fa-chevron-down" }></i>
         </div>
         <div className={isVisible ? "collapser__content" : "collapser__content hidden" }>{ content }</div> 
       </article>

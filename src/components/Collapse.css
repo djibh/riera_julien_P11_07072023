@@ -40,3 +40,11 @@
 .hidden {
     transform: translateY(-100%);
 }
+
+.fa-chevron-down {
+    transition: all .5s ease-out;
+}
+
+.fa-chevron-down.active {
+    transform: rotateX(180deg);
+}
