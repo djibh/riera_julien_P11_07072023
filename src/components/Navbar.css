@@ -34,9 +34,11 @@
 
 @media screen and (max-width: 992px) {
     .navbar {
-        padding-inline: 1em;
+        padding-inline: 2em;
     }
-    
+}
+
+@media screen and (max-width: 768px) {   
     #navbar__logo {
         width: 100px;
     }
@@ -44,6 +46,6 @@
     .navbar__buttons {
         gap: 2rem;
         font-weight: 500;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 }

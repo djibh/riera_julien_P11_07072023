@@ -9,12 +9,12 @@ function Carousel({ pictures }) {
     const handleClickPrevious = () => { 
         (currentIndex === 0) 
         ? setcurrentIndex(maxcurrentIndex) 
-        : setcurrentIndex(currentIndex - 1) }
+        : setcurrentIndex(prevValue => prevValue - 1) }
 
     const handleClickNext = () => { 
         (currentIndex === maxcurrentIndex)
         ? setcurrentIndex(0)
-        : setcurrentIndex(currentIndex + 1)}
+        : setcurrentIndex(prevValue => prevValue + 1)}
 
     return <div className="carousel">
             <img src={ pictures[currentIndex] } alt={`Pièce-${currentIndex+1}`}></img>

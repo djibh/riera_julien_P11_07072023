@@ -5,13 +5,14 @@
 
 .grid__item {
     position: relative;
-    max-width: 340px;
+    width: 30%;
     background-color: black;
     overflow: hidden;
 }
 
 .grid__item--picture {
-    width: auto;
+    width: 100%;
+    object-fit: cover;
     cursor: pointer;
     transition: 180ms ease-out;
 }
@@ -37,6 +38,12 @@
 
 @media screen and (max-width: 992px) {
     .grid__item {
-        min-width: 100%;
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid__item {
+        width: 100%;
     }
 }

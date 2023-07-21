@@ -1,4 +1,4 @@
-.grid {
+/* .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     place-items: center;
@@ -7,11 +7,22 @@
     padding: 2em 1em;
     background-color: #f6f6f6;
     border-radius: 1em 1em 0 0;
+} */
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    gap: 2em;
+    padding: 2em 1em;
+    background-color: #f6f6f6;
+    border-radius: 1em 1em 0 0;
 }
 
 @media screen and (max-width: 992px) {
     .grid {
-        /* grid-template-columns: 1fr; */
+        justify-content: space-between;
         background-color: white;
         padding: 0;
         padding-bottom: 1em;
