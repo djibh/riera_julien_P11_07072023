@@ -5,7 +5,8 @@
 main {
   max-width: 1200px;
   margin: auto;
-  padding-inline: 1em;
+  padding-inline: 2em;
+  padding-bottom: 2em;
 }
 
 body {
@@ -23,9 +24,8 @@ code {
     monospace;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   main {
-      margin-inline: 1em;
+      padding-inline: 1em;
   }
-
 }

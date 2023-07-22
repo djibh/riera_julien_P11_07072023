@@ -4,7 +4,7 @@
     align-items: center;
     max-width: 1200px;
     margin-inline: auto;
-    padding: 2em 1em;
+    padding: 2em;
 }
 
 #navbar__logo {
@@ -32,13 +32,12 @@
     text-decoration: underline;
 }
 
-@media screen and (max-width: 992px) {
-    .navbar {
-        padding-inline: 2em;
-    }
-}
 
-@media screen and (max-width: 768px) {   
+@media screen and (max-width: 768px) {  
+    .navbar {
+        padding-inline: 1em;
+    }
+
     #navbar__logo {
         width: 100px;
     }
