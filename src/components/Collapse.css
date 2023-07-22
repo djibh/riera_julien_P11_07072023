@@ -1,6 +1,7 @@
 .collapser {
     margin-bottom: 1em;
-    overflow: hidden;
+    background-color: #eee;
+    border-radius: .7em;
 }
 
 .collapser__title {
@@ -22,24 +23,24 @@
     padding: 0;
 }
 
-.collapser__content, .collapser__content--hidden {
-    transition: transform 250ms ease-out;
+.collapser__content, .collapser__content.hidden {
+    transition: max-height 250ms ease-in-out;
 }
 
 .collapser__content {
-    position: relative;
-    min-height: 50px;
-    line-height: 1.7;
-    top: -30px;
-    z-index: -1;
-    padding: 1.7em 1em .7em ;
-    background-color: #eee;
-    border-radius: 0 0 .7em .7em;
-    transform: translateY(0);
+    max-height: 300px;
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+.collapser__content p, .collapser ul {
+    margin: 0;
+    padding: .7em 1em;
 }
 
 .hidden {
-    transform: translateY(-110%);
+    /* transform: translateY(-110%); */
+    max-height: 0;
 }
 
 .fa-chevron-down {
