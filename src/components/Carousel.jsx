@@ -25,7 +25,6 @@ function Carousel({ pictures }) {
                         <div className='slider-count'>{`${currentIndex + 1} / ${pictures.length}`}</div>
                     </div>
             }
-            
         </div> 
 }
 
