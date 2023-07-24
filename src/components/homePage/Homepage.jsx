@@ -1,6 +1,6 @@
-import homebannerImageSource from '../assets/home-banner-img.png'
-import useAllApartments from '../hooks/useAllApartments';
-import Banner from './Banner';
+import homebannerImageSource from '../../assets/home-banner-img.png'
+import useAllApartments from '../../hooks/useAllApartments';
+import Banner from '../Banner';
 import Grid from './Grid';
 import './Homepage.css';
 

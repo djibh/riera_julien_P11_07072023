@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom'
 import getApartment from '../../api/getApartment'
 import ApartmentHeader from './ApartmentHeader'
 import ApartmentDetails from './ApartmentDetails'
-import Carousel from '../Carousel'
+import Carousel from './Carousel'
 import './Apartment.css'
 
 function Apartment() {
