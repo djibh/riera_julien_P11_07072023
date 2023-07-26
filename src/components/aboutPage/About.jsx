@@ -2,9 +2,10 @@ import aboutBannerImageSource from '../../assets/about-banner-img.png'
 import Banner from "../Banner"
 import Collapse from "../Collapse"
 import { listOfSections } from '../../data/aboutPageContents'
+import './About.css'
 
 function About() {
-  return <>
+  return <div className='about-page'>
             <Banner imgSource={ aboutBannerImageSource }/>
             <section>
                 {
@@ -15,7 +16,7 @@ function About() {
                     )
                 }
             </section>
-        </>
+        </div>
 }
 
 export default About
